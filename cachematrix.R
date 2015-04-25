@@ -3,6 +3,8 @@
 ## access them again without having to do the computation again.  These
 ## functions provide that functionality.
 
+
+## Function:  makeCacheMatrix
 ## accepts a matrix as a parameter and returns a "CacheMatrix", which can
 ## store the original data and its inverse
 
@@ -21,6 +23,7 @@ makeCacheMatrix <- function(x = matrix()) {
 }
 
 
+## Function:  cacheSolve
 ## This function accepts a "CacheMatrix" created by the previous function and
 ## returns its inverse.  If the CacheMatrix already contains the inverse in its
 ## cache, the cached data will be returned.  Otherwise, the inverse will be
